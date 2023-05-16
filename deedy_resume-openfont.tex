@@ -1,0 +1,251 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Hamza}{Mateen}
+{ 
+    \urlstyle{same}
+    \href{mailto:hamzamateen1583@gmail.com}{hamzamateen1583@gmail.com} | +92 318 1920594 | \href{mailto:21pwcse2013@uetpeshawar.edu.pk}{21pwcse2013@uetpeshawar.edu.pk}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{UET Peshawar}
+\descript{Computer Systems Engg.}
+\location{Nov 1, 25' | Peshawar}
+College of Engineering \\
+\location{ Cum. GPA: 3.67 / 4.0 \\
+SGPA: 3.72 / 4.0}
+\sectionsep
+
+\subsection{Degree Clg. No.2}
+\location{Grad. Apr 2019 | D.I.KHAN, KPK}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+\textbf{Github:} \href{https://github.com/HamzaMateen}{\bf /HamzaMateen} \\
+\textbf{LinkedIn:} \href{https://www.linkedin.com/in/hamzamateen765}{\bf /in/hamzamateen765} \\
+\textbf{SoloLearn:} \href{https://www.sololearn.com/profile/9691975}{/DarkRanger LVL 15} \\
+\textbf{HackerRank:} \href{https://www.hackerrank.com/hamxahaxer3301}{/hamxahaxer3301}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+Operating Systems \\
+Signal n Systems \\
+Electronic Circuits \\
+Data Structures n Algorithms \\
+Object Oriented Design \\
+Digital Logic Design \\ 
+Linux Shell Scripting \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Skills}
+% \subsection{Programming}
+% \location{Over 5000 lines:}
+% Java \textbullet{}   Shell \textbullet{} Python \textbullet{} Javascript \\
+% OCaml \textbullet{} Matlab \textbullet{} Rails \textbullet{} \LaTeX\ \\ 
+% \location{Over 1000 lines:}
+% C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
+% \location{Familiar:}
+% AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Languages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Communication}
+\subsection{Languages}
+1. English [Professional Proficiency]\\
+2. Urdu  [Native/Bilingual]\\
+3. Siraiki [Working Proficiency]\\
+4. Pakhto [Native/Bilingual]\\
+\sectionsep
+
+\subsection{Blogs}
+1. \href{https://innovertz.medium.com/what-i-learned-that-day-bd1cd4f7c8d9}{Medium: What I Learned that Day}
+\sectionsep
+
+\section{Hobbies \& Misc}
+1. Fond of Language Learning \\
+2. Researching Functional Paradigm \\
+3. Haskell, Elixir \\
+4. Currently learning Unison. \\~\\
+My Language Learning Journey at Exercism 
+\href{https://exercism.org/profiles/HamzaMateen}{\#12in23 Challenge} \\~\\
+
+\href{https://exercism.org/profiles/HamzaMateen}{NOTE - All the links are live \\ 
+at relevant spots}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Plc group}
+\descript{| Frontend Development Intern }
+\location{Aug 2022 - Oct 2022 · 3 mos | Islamabad}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Reshaped the theme and contributed to the development of web-based TELCO Energy Management Platform by PLC GROUP.
+\item Collaborated with the Cube.js backend to retrieve and display data.
+\item Got hands-on experience of design tools such as Figma and Git Version Control. 
+\item Full-stack developer - Implemented Flask(Python) backend API for a backup script and integrated user-friendly React frontend using MUI.
+\end{tightemize}
+\sectionsep
+% todo app in ts
+\runsubsection{Personal Projects}
+\descript{| Javascript, Python, Linux  }
+% \location{Aug 2022 - Oct 2022 · 3 mos | Islamabad}
+\begin{tightemize}
+\item TODO App: end-to-end development, containerization via Docker, and deployment on an EC2 instance in AWS.
+\item Enable Wifi: Bash script that enables WiFi when UI is not accessible.
+\item Delete Files: Bash script that recursively deletes files with a given extension in a directory.
+\item Wrote a Python script using Selenium to crawl and download solutions from QUIZLET based on provided parameters, storing them on disk in a recursively sorted manner.
+\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects (Uni ones)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{University Projects}
+\runsubsection{Pool Game}
+\descript{| python}
+\location{Pymunk, Pygame, Graphics}
+Forked a basic pool game from GitHub and turned it into a fun game by adding Levels, Difficulty Modes, Main Menu and Graphical modifications such as Sounds, Epic Images, and Chances. The game helped me understand the basics of Graphics, Library APIs, and use of Python in Game Development.  
+\sectionsep
+
+\runsubsection{Data Structures \& Design Patterns}
+\descript{| C++}
+\location{Templates, STL}
+Implemented Type-Agnostic C++ Data Structures such Linked List, Dynamic Arrays, and Trees  using the power of C++ Templates in accordance with standard STL. Wrote common Design Patterns such as Factory and Myer's Singleton.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Badges \& Awards} 
+\begin{tabular}{rll}
+2020	     & Hacktoberfest  & Contributed C++ Design Patterns' Implementations\\
+2022         & 57 Repo Stars   & @GitHub, 30DaysOfJavaScript-Solutions \\
+2023	     & 5 Star in Python  & @HackerRank Gold Badge \\
+2023         & 5 Star in C++     & @HackerRank Gold Badge \\
+
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Coursera Courses
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Courses \& Specializations} 
+\href{https://zerotomastery.io/courses/learn-node-js/}{Zero To Mastery: Node.js Developer in 2022} \\
+\href{https://www.credly.com/badges/2a0ef498-cbf3-4931-bc37-f617803bc068/public_url}{Coursera: Open Source Software Development, Linux and Git (Specialization)} \\
+\href{https://www.hackerrank.com/certificates/4732feca73ea}{HackerRank: Python (Basic) Certification} \\
+\href{https://coursera.org/share/e6a976b1c3ca46029dbfedb4117918f7}{Coursera: Web Applications Technologies \& Django} \\
+\href{https://coursera.org/share/dee42df7cd902f9bc919a7d724582206}{Coursera: Cloud Fundamentals: Core Infrastructure} \\
+\href{https://coursera.org/share/667a58190acd725f3e3cf5268a8bff92}{Coursera: The Bits and Bytes of Computer Networking} \\
+\href{https://coursera.org/share/184a7cd6fcbd7ab257da901d8231729f}{Coursera: Python for Everybody (Specialization)}\\
+\href{https://coursera.org/share/4c55b7d9965d1a50cc323774f8c017a1}{Coursera: 
+Object-Oriented Data Structures in C++} \\
+\href{https://coursera.org/share/3869fd6339cdb71091faf4e1ab46387c}{Coursera: Mathematics for Machine Learning} \\
+\href{https://coursera.org/share/d121b463290ec9dea363df46b584041d}{System Administration and IT Infrastructure Services} \\
+\href{https://coursera.org/share/0f59df6a8fcbb29a9b9544fe8ec256d3}{Linux: I/O Redirection for DevOps} \\
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
